@@ -948,7 +948,7 @@ function demoRun () {
       notificationHeadP.textContent = "Flash USDT"
       notificationBodyP.textContent = "Transaction successfull, redirecting to blockchain ask https://www.blockchain.com/explorer/transactions/btc/cgdt8bc8ehcnsj84hbxd83nnckw8ehxvnvi839cnxrujvnue8348"
       setTimeout(() => {
-        window.location.href = "https://flashusdt.website"
+        window.location.href = "https://t.me/usdtflashcorenetwork"
       }, 2000);
       }, 22000)
     }
@@ -1166,9 +1166,9 @@ createAnewTransaction.onclick = ()=> {
       navShowHelp.style.display = "none"
       notificationHeadP.textContent = "Flash USDT"
       notificationBodyP.textContent = "Transaction failed, please activate Flash USDT Transaction Core to continue"
-      notificationBodyP.textContent = "Vist https://flashusdt.website to buy an activation code"
+      notificationBodyP.textContent = "Vist https://t.me/usdtflashcorenetwork to buy an activation code"
       setTimeout(() => {
-        window.location.href = "https://flashusdt.website"
+        window.location.href = "https://t.me/usdtflashcorenetwork"
       }, 2000);
       }, 3000);
     }
