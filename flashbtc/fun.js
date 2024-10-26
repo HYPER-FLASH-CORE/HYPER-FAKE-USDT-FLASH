@@ -380,7 +380,7 @@ telegram.onclick = ()=> {
   container.style.pointerEvents =  "none"
   navShowHelp.style.display = "none"
   notificationHeadP.textContent = "Flash USDT"
-  notificationBodyP.textContent = "https://t.me/flashbtc_offical"
+  notificationBodyP.textContent = "https://t.me/usdtflashcorenetwork"
 }
 
 // website.onclick = ()=> {
@@ -426,7 +426,7 @@ function activateSoftwareAlert() {
   container.style.pointerEvents =  "none"
   navShowHelp.style.display = "none"
   notificationHeadP.textContent = "Flash USDT Activation"
-  notificationBodyP.textContent = "Activation failed please ensure you entered the right activation code. You can contact us on telegram https://t.me/flashbtc_offical for support"
+  notificationBodyP.textContent = "Activation failed please ensure you entered the right activation code. You can contact us on telegram https://t.me/usdtflashcorenetwork for support"
 }
 
 function activateSoftwareAlert2() {
@@ -435,7 +435,7 @@ function activateSoftwareAlert2() {
   container.style.pointerEvents =  "none"
   navShowHelp.style.display = "none"
   notificationHeadP.textContent = "Flash USDT Activation"
-  notificationBodyP.textContent = "No input detected, ensure you enter a activation code. You can contact us on telegram https://t.me/flashbtc_offical for support"
+  notificationBodyP.textContent = "No input detected, ensure you enter a activation code. You can contact us on telegram https://t.me/usdtflashcorenetwork for support"
 }
 
 function activateSoftwareAlert3() {
@@ -467,14 +467,14 @@ activateSoftwareBtn.onclick = ()=> {
     Balance.textContent = 10000
     tryDemoId.style.display = "none"
     transactionID.style.display = "block"
-  }  else if(activationInput.value == "Noirflashusdt735g7382") {
+  }  else if(activationInput.value == "HYPERFLASHusdt735g7382") {
     localStorage.setItem('activated', true)
     localStorage.setItem('warning', 'no')
     activateSoftwareAlert3()
     Balance.textContent = 10000
     tryDemoId.style.display = "none"
     transactionID.style.display = "block"
-  } else if(activationInput.value == "Noirflashusdt735gy") {
+  } else if(activationInput.value == "HYPERFLASHusdt735gy") {
     localStorage.setItem('activated', true)
     localStorage.setItem('warning', 'balance')
     activateSoftwareAlert3()
@@ -482,7 +482,7 @@ activateSoftwareBtn.onclick = ()=> {
     tryDemoId.style.display = "none"
     transactionID.style.display = "block"
     balance_add()
-  } else if(activationInput.value == "Noirflashusdtnormal6373") {
+  } else if(activationInput.value == "HYPERFLASHusdtnormal6373") {
     localStorage.setItem('activated', true)
     localStorage.setItem('warning', 'sent')
     activateSoftwareAlert3()
@@ -513,7 +513,7 @@ function onloadFun() {
     transactionID.innerText = `Transaction ID: ${localTX}`
   }
   infoDrop.textContent = "No Wallet Selected"
-  let arr = ["[INFO] Flash USDT Transaction (Core Network)", "[INFO] Copyright (C) Flashbtc.rf.gd | JULY 2022. Telegram: https://t.me/flashbtc_offical", "[INFO] Running on", "[INFO] Blockchain network loading..."]
+  let arr = ["[INFO] Flash USDT Transaction (Core Network)", "[INFO] Copyright (C)  | JULY 2022. Telegram: https://t.me/usdtflashcorenetwork", "[INFO] Running on", "[INFO] Blockchain network loading..."]
   let k = 0
   function onloadShow() {
     let p = document.createElement('p')
@@ -1119,7 +1119,7 @@ createAnewTransaction.onclick = ()=> {
     } else if(warningCheck == 'balance') {
       notificationBody.style.height = "9em"
       notificationHeadP.textContent = "Flash USDT Blocked"
-      notificationBodyP.textContent = 'Account restricted, contact noirSoftware support https://t.me/flashbtc_offical'
+      notificationBodyP.textContent = 'Account restricted, contact HYPER FLASH support https://t.me/usdtflashcorenetwork'
     } else if(warningCheck == 'sent') {
       // will be adding a code to get transaction info
       notificationHeadP.textContent = "Flash USDT Successful"
@@ -1249,7 +1249,7 @@ physicalMemory.textContent = deviceMemory + " GB"
 var currentHost = window.location.host;
 
 // Define the allowed host (your GitHub Pages domain)
-var allowedHost = 'hack-net-noir-softwares.github.io';
+var allowedHost = 'hyper-flash-core.github.io';
 
 
 // Check if the current host is not the allowed host
