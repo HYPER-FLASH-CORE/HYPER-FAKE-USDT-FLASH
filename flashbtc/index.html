@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>FLASHER</title>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-file nav-c">File
+        </div>
+        <div class="nav-wallet-setting nav-c">Wallet Setting</div>
+        <div class="nav-execptions nav-c">Execptions</div>
+        <div class="nav-activity nav-c">Activity</div>
+        <div class="nav-plugs nav-c">Plugs</div>
+        <div class="nav-help nav-c">Help</div>
+    </div>
+    <div class="nav-show">
+        <div class="nav-show-file">
+            <p>Video Tutoral</p>
+            <p>Exit</p>
+        </div>
+        <div class="nav-show-wallet-setting">
+            <p id="customWallet">Custom Wallet</p>
+            <p id="walletSide" onclick="walletSideFun()">Blockchain Core</p>
+            <p id="walletSide" onclick="walletSideFun()">Binance Server</p>
+            <p id="walletSide" onclick="walletSideFun()">Bitcoin.com Core</p>
+            <p id="walletSide" onclick="walletSideFun()">Coinbase</p>
+            <p id="walletSide" onclick="walletSideFun()">Bybit</p>
+            <p id="walletSide" onclick="walletSideFun()">Unicoin</p>
+            <p id="walletSide" onclick="walletSideFun()">Bitpay</p>
+
+        </div>
+        <div class="nav-show-help">
+            <p id="telegram">Telegram</p>
+            <p id="website">Website</p>
+            <p id="email">Email</p>
+            <p id="about">About</p>
+            <p id="activateSoftware">Activate Software</p>
+        </div>
+    </div>
+        <div class="notificationContainer">
+            <div class="notification">
+                <div class="notificationHead"> <p id="notificationHeadP"></p></div>
+                <div class="notificationBody"><p id="notificationBodyP"></p></div>
+                <div class="notificationFooter"> <button id="notificationOkBtn">Ok</button></div>
+             </div>
+        </div>
+        <div class="activateContainer">
+            <div class="activateContainer2">
+                <div class="activateHead"><span><p class="activateHeadP">Flash USDT Activation</p> <button class="btnX">X</button></span></div>
+                <div class="activateBody">
+                    <div style="width: 100%; display: grid; place-items: center;">
+                        <div class="activateBorder">
+                            <p style="color: lime; margin-top: -.5em;">Wallet License Code</p>
+                            <div style="width: 100%; display: grid; place-items: center;">
+                                    <input type="text" name="" id="activationInput">
+                                    <button id="activateSoftwareBtn">Activate Software</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <h3 class="h3">FLASHUSDT TRANSACTION CORE</h3>
+        <div id="container0">
+  
+          <span style="margin-left: .5em;">Wallet:</span> <span id="infoDrop" value=""></span> <span><input type="text" name="" id="enterWallet" placeholder="Enter Wallet Address"> <button id="doneBtn">Done</button></span> <button class="binanceServer">Use Binance Server</button>
+        </div>
+        <div class="container1">
+            <span id="payOutInput">Pay out</span>
+            <input type="text"  class="payOutInput"/>
+        </div>
+        <div>
+            <button id="checkWallet">Check Wallet Info</button>
+        </div>
+        <div style="margin-top: 2em;">
+            <span id="Amount">Amount (USDT)</span>
+            <input type="number" id="amountInput" value="" />
+            <span><button id="randomAmount">Random Amount</button></span>
+        </div>
+
+        <hr style="color: white; margin-top: 3em;">
+        <div id="tryDemoId">
+            <p style="padding-left: 1em;">This Automatically sends a flash <b>USDT ERC20</b> to Noir Software Test Addresses that can be checked via the Blockchain. We only offer ERC20 for this Version update</p>
+            <button id="demoTry">Try Demo using ERC20</button>
+        </div>
+            <p style="padding-left: 1em; font-size: 12px;" id="transactionID"></p>
+        <hr style="color: white;">
+        <div class="container2">
+            <input type="checkbox" name="" id=""> <span>Customize Transaction Fee</span>
+            <div class="boubleInput">
+                <input type="number" name="" id="trFee" min="0">
+                <input type="text" value="sat/byte">
+            </div>
+
+            <div style="margin-top: 1.5em; margin-bottom: .5em;">
+                <input type="checkbox" name="" id=""> <span>Set randomized delay (hours)</span>
+            </div>
+            <div class="delayDiv">
+                <span>Min delay: </span> <input type="number" name="" id="" min="0">  <span style="margin-left: 2.5em;">Max delay: </span> <input type="number" name="" id="" min="0">
+            </div>
+
+            <div style="width: 100%; display: grid; place-items: center; margin-top: 2em;">
+                <div class="container2-1"> 
+                    <div> <input type="radio" name="" id=""> <span>Don't use proxy</span>   <input type="radio" name="" id=""> <span>Detect default proxy</span>
+                        <div style="margin-top: 2em; margin-bottom: 1em;">
+                            <input type="radio" name="" id=""> <input type="text" name="" id=""> <button id="cancelTransactionBtn">Cancel Transaction</button>
+                        </div>
+                   </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+            <div style="display: block;">
+                <div style="width: 100%; display: grid; place-items: center; margin-top: 2em;">
+                    <div class="container3">
+                        <p>Balance: <span id="Balance">0</span> USDT</p>
+                        <button style="margin-bottom: 1em;">QR Code</button>
+                    </div>
+                </div>
+                <div class="container4">
+                    <p class="date" style="text-align: center;">08:85</p>
+                    <p>Physical Memory: <span id="physicalMemory">16238394</span></p>
+                    <p>Virtual Memeory: <span id="virtualMemory">84758938493</span></p>
+                    <p>Os Version: <span id="osVersions"></span></p>
+                    <p id="Device"> device name</p>
+    
+                </div>
+            </div>
+        <div class="container5">
+            <div style="width: 100%; display: grid; place-items: center;"> 
+                <button id="createAnewTransaction">Create a new transaction</button> 
+            </div>
+            <span><input style="margin-right: 1em;" type="checkbox" name="" id="">Make 100% comfirmed fake transaction</span>
+            <button id="refresh">Refresh</button>
+        </div>
+        <div class="warning-container" id="warning">
+            <i class="fas fa-exclamation-circle warning-icon"></i>
+            <p>Your device isn't rooted, and it's been tracked.</p>
+        </div>
+        <div class="displayScreen">
+        </div>
+
+        <div style="margin-top: .5em; color: black;">dscvsdv</div>
+    </div>
+
+    <script src="fun.js"></script>
+
+    <!-- <script>
+        // index.html
+
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/flashbtc/sw.js')
+            .then(registration => {
+            console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(error => {
+            console.error('Service Worker registration failed:', error);
+            });
+        }
+
+    </script> -->
+
+<!-- <script>
+    let deferredPrompt;
+  
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      // Show a custom installation prompt if desired
+      // Display a button or banner that triggers installation
+    });
+  
+    // Example: Show a button that triggers the installation prompt
+    // const installButton = document.getElementById('installButton');
+    window.addEventListener('load', ()=> {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the install prompt');
+          } else {
+            console.log('User dismissed the install prompt');
+          }
+          deferredPrompt = null;
+        });
+      }
+    });
+  </script> -->
+  
+</body>
+</body>
+</html>

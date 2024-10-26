@@ -1,0 +1,41 @@
+{
+    "name": "Flash USDT Transaction Core",
+    "short_name": "FlashUSDT",
+    "start_url": "/USDT-CORE-/flashbtc/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "description": "Flash USDT Transaction Core",
+    "icons": [
+      {
+        "src": "homescreen48.png",
+        "sizes": "48x48",
+        "type": "./FLASHBTC-CORE/image/png"
+      },
+      {
+        "src": "homescreen72.png",
+        "sizes": "72x72",
+        "type": "./FLASHBTC-CORE/image/png"
+      },
+      {
+        "src": "homescreen96.png",
+        "sizes": "96x96",
+        "type": "./FLASHBTC-CORE/image/png"
+      },
+      {
+        "src": "homescreen144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "homescreen168.png",
+        "sizes": "168x168",
+        "type": "./FLASHBTC-CORE/image/png"
+      },
+      {
+        "src": "homescreen192.png",
+        "sizes": "192x192",
+        "type": "./FLASHBTC-CORE/image/png"
+      }
+    ]
+  }
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Node Bypass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .icon-container {
+            display: inline-block;
+            font-size: 48px;
+        }
+
+        .padlock-icon {
+            animation: padlock-key-animation 2s linear infinite;
+        }
+
+        @keyframes padlock-key-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: lime;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain Node Bypass</h1>
+        <p><span class="icon-container"><i class="fas fa-lock padlock-icon"></i></span> $30 to activate</p>
+        <input type="text" id="activationCodeInput" placeholder="Enter Activation Code">
+        <button onclick="checkActivationCode()">Register Activation Code Node Bypass</button>
+    </div>
+
+    <script>
+        function checkActivationCode() {
+            var codeInput = document.getElementById("activationCodeInput").value;
+            var firstEightCharacters = codeInput.substr(0, 8);
+            
+            if (firstEightCharacters === "flashbtc") {
+                alert("Access to dark web node bypass blocked.");
+            } else {
+                alert("Incorrect code");
+            }
+        }
+    </script>
+</body>
+</html>
